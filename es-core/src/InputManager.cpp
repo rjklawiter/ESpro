@@ -369,6 +369,7 @@ std::string InputManager::getDeviceGUIDString(int deviceId)
 	}
 
 	char guid[65];
+	std::string uniqueDeviceSuffix = std::to_string(deviceId);
 	SDL_JoystickGetGUIDString(SDL_JoystickGetGUID(it->second), guid, 65);
-	return std::string(guid);
+	return std::string(guid+uniqueDeviceSuffix);
 }
