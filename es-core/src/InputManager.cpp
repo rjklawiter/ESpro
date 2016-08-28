@@ -85,7 +85,7 @@ void InputManager::addJoystickByDeviceIndex(int id)
 	
    	const int max_size = std::numeric_limits<int>::digits10 + 1 /*sign*/ + 1 /*0-terminator*/;
    	char numPlayerString[max_size] = {0};
-   	sprintf(numPlayerString, "%d", id);
+   	sprintf(numPlayerString, "%d", (id+1));
    	
    	namePlayerN.append(numPlayerString);
    	//give GUID that more U
