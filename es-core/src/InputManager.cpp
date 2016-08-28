@@ -88,6 +88,8 @@ void InputManager::addJoystickByDeviceIndex(int id)
    	sprintf(numPlayerString, "%d", id);
    	
    	namePlayerN.append(numPlayerString);
+   	//give GUID that more U
+   	strcat( guid, numPlayerString);
 //-----------------------------------------------------------------------------------------------------------------
    
 	// create the InputConfig
