@@ -87,7 +87,7 @@ void InputManager::addJoystickByDeviceIndex(int id)
    	char numPlayerString[max_size] = {0};
    	sprintf(numPlayerString, "%d", id);
    	
-   	namePlayerN::append(numPlayerString);
+   	namePlayerN.append(numPlayerString);
 //-----------------------------------------------------------------------------------------------------------------
    
 	// create the InputConfig
